@@ -1,0 +1,15 @@
+# theme = catppuccin-mocha
+# theme = GruvboxDark
+theme = catppuccin-mocha.conf 
+
+font-family = "JetBrainsMono Nerd Font"
+font-family-bold = "JetBrainsMono Nerd Font Bold"
+font-family-italic = "JetBrainsMono Nerd Font Italic"
+font-family-bold-italic = "JetBrainsMono Nerd Font Bold Italic"
+font-synthetic-style = true
+font-size = 13
+
+gtk-titlebar = false
+
+cursor-style = block
+cursor-style-blink = false

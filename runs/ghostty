@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/ghostty-org/ghostty $HOME/personal/ghostty
+
+# sudo apt install libgtk-4-dev libadwaita-1-dev git gettext libxml2-utils
+sudo apt install -y git build-essential pkg-config libgtk-4-dev libadwaita-1-dev \
+    libvte-2.91-dev libxml2-dev libglib2.0-dev libpango1.0-dev \
+    libharfbuzz-dev libfontconfig1-dev libfreetype6-dev \
+    ninja-build meson cmake
+
+cd $HOME/personal/ghostty
+git checkout v1.1.1
+zig build -Doptimize=ReleaseFast
+sudo cp zig-out/bin/ghostty /usr/local/bin
